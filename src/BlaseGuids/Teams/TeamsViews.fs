@@ -10,8 +10,8 @@ module Views =
             for player in players do
                 div [_class "column is-one-third-widescreen is-half-tablet"] [
                     div [_class "card"] [
-                        div [_class "card-header"] [
-                            div [_class "card-header-title"] [
+                        div [_class "card-header has-background-dark"] [
+                            div [_class "card-header-title has-text-white"] [
                                 rawText player.Name
                             ]
                         ]
@@ -23,7 +23,7 @@ module Views =
                         ]
 
                         footer [_class "card-footer"] [
-                                button [_class "card-footer-item button"; attr "x-data" "{}"; attr "@click" (sprintf "copyText(%s)" player.Id)] [
+                                button [_class "card-footer-item button"; attr "x-data" "{}"; attr "@click" (sprintf "copyText('%s')" player.Id)] [
                                 rawText "Copy to Clipboard"
                             ]
                         ]
