@@ -6,7 +6,7 @@ open BlaseGuids.Data
 
 module Views = 
     let teamView (team: Models.Team) =
-        div [_class "column is-one-third"] [
+        div [_class "column is-one-third-widescreen is-half-tablet"] [
             div [_class "card"; attr "x-data" "{}"] [
                 div [_class "card-header"; attr "style" (sprintf "background-color: %s" team.MainColor)] [
                     div [_class "card-header-title" ] [
