@@ -20,9 +20,7 @@
     <Compile Include="Router.fs" />
     <Compile Include="Program.fs" />
 
-    <Content Include="web.config">
-      <CopyToOutputDirectory>"PreserveNewest"</CopyToOutputDirectory>
-    </Content>
+    <None Include="web.config" CopyToOutputDirectory="PreserveNewest" />
 
     <Content Include="static\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
