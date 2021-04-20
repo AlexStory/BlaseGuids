@@ -30,7 +30,10 @@ module Views =
 
     let showView (team: Models.Team) (players: Models.Player list) =
        App.layout [
-           h2 [_class "is-size-2 has-text-centered"] [rawText team.FullName]
+           div [_class "box is-radiusless"; attr "x-data" "{}" ; attr "x-init" (sprintf "function() {document.body.style.backgroundColor = '%s'}" team.MainColor)] [
+            h2 [_class "title has-text-centered"] [rawText team.FullName]
+            p   [_class "subtitle has-text-centered"] [rawText team.Slogan]
+           ]
            div [_class "section columns is-multiline"] [
                for player in players do
                 yield playerView player 
