@@ -12,6 +12,7 @@ module Models =
         Nickname: string 
         Rotation: string list
         SecondaryColor: string
+        Slogan: string
     }
 
     type Player = {

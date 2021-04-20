@@ -1,1 +1,17 @@
 /* This file is for your main application css. */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+
+
+.app-alert {
+    position: fixed;
+    top: 80px;
+    width: 50%;
+    margin-left: 25%;
+}
