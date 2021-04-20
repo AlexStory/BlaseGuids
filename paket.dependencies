@@ -4,7 +4,6 @@ storage: none
 framework: netcoreapp3.1
 
 nuget FSharp.Core
-nuget FSharp.Data
 nuget ply
 nuget Saturn
 nuget Simple.Migrations
